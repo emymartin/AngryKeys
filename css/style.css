@@ -12,10 +12,29 @@
 
 header{
     background-color:rgb(115, 79, 154);
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar-collapse{
+    flex-grow: initial;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    font-family: 'Chakra Petch', sans-serif;
+    color:rgb(139, 212, 80);
+    font-size: 30px;
+    font-weight: 400;
+    transition: 0.3s ease all; 
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:rgb(247, 187, 42);
+    transform: scale(1.05);
 }
 
 .hlogo{
@@ -30,26 +49,6 @@ header{
         transform: scale(1);
     }
 }
-
-header nav ul{
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li{
-    margin: 10px;
-}
-
-header nav ul li a{
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight:400;
-    font-size: 30px;
-    text-decoration: none;
-    color:rgb(139, 212, 80);
-}
-
-
-
 
 /*----------MAIN----------*/
 
@@ -110,6 +109,11 @@ header nav ul li a{
     color:rgb(139, 212, 80);
     margin: 20px;
 }
+
+.productosImg:hover{
+    transform: scale(1.20);
+}
+
 
 /*--------------------------parte.html---------------------------*/
 
@@ -251,15 +255,15 @@ header nav ul li a{
 .imgIzq{
     background-color:rgb(29, 26, 47);
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content:space-evenly;
+    align-items:flex-end;
     flex-direction: row-reverse;
 }
 
 .imgIzq div{
     width: 500px;
     height: 350px;
-    text-align: center;
+    text-align:center;
 
 }
 
@@ -267,19 +271,18 @@ header nav ul li a{
     text-align: center;
     font-family: 'Chakra Petch', sans-serif;
     color:rgb(247, 187, 42);
-    padding: 20px;
+    padding-top: 50px;
 }
 
 .imgIzq div h3{
     color:rgb(139, 212, 80);
     font-size: 20px;
-    padding-top: 20px;
 }
 
 .imgIzq div p{
     color:rgb(139, 212, 80);
     font-size: 20px;
-    padding-top: 10px;
+    margin: 0px;
 }
 
 .imgIzq a{
@@ -303,24 +306,23 @@ header nav ul li a{
     text-align: center;
     font-family: 'Chakra Petch', sans-serif;
     color:rgb(247, 187, 42);
-    padding: 20px;
+    padding-top: 50px;
 }
 
 .imgDer div h3{
     color:rgb(139, 212, 80);
     font-size: 20px;
-    padding-top: 20px;
 }
 
 .imgDer div p{
     color:rgb(139, 212, 80);
     font-size: 20px;
-    padding-top: 10px;
     font-family: 'Chakra Petch', sans-serif;
+    margin: 0px;
 }
 
 .imgDer a{
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 
 /*--------------------------contacto.html---------------------------*/
@@ -337,6 +339,7 @@ header nav ul li a{
 
 footer{
     background-color:rgb(115, 79, 154);
+    color:rgb(139, 212, 80); 
     display: flex;
     justify-content: space-around;
     align-items: center;    
@@ -353,6 +356,23 @@ footer ul li a{
     color:rgb(139, 212, 80);    
 }
 
+.bi{
+    color:rgb(139, 212, 80);
+    font-size: 2rem;  
+}
+
+footer ul li a:hover{
+    color:rgb(247, 187, 42);
+}
+
+.bi:hover{
+    color:rgb(247, 187, 42);
+    font-size: 2.2rem;
+}
+
+footer a img:hover{
+    transform: scale(1.1);
+}
 
 /*-------------------MEDIA QUERY-------------------*/
 
