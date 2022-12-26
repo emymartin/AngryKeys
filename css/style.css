@@ -24,9 +24,11 @@ header{
     flex-grow: initial;
 }
 
+
+
 .navbar-dark .navbar-nav .nav-link{
     font-family: 'Chakra Petch', sans-serif;
-    color:rgb(139, 212, 80);
+    color:coral
     font-size: 30px;
     font-weight: 400;
     transition: 0.3s ease all; 
@@ -408,6 +410,12 @@ footer a img:hover{
     footer ul li a{
         font-size: 15px;        
     }
+}
+
+@media  and (max-width:991px){
+    .collapse navbar-collapse{           
+    }
+    
 }
 
 @media screen and (max-width:950px){
