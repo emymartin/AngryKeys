@@ -53,21 +53,22 @@ header{
 /*----------MAIN----------*/
 
 /*--------------------------index.html---------------------------*/
+
 .hero{
     background-color:rgb(29, 26, 47);
-    width: 100%;    
-    display: flex;
+    width: 100%;
     justify-content:baseline;
     align-items: center;
     flex-direction: column;
     font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .hero h1{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 40px;
     color:rgb(247, 187, 42);
-    margin: 10px;
 }
 
 .hero h2{
@@ -110,10 +111,17 @@ header{
     margin: 20px;
 }
 
-.productosImg:hover{
+.imgTeclado:hover{
     transform: scale(1.20);
 }
 
+.imgKeycaps:hover{
+    transform: scale(1.20);
+}
+
+.imgSwitch:hover{
+    transform: scale(1.20);
+}
 
 /*--------------------------parte.html---------------------------*/
 
@@ -343,11 +351,13 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;    
-    padding: 10px;
+    padding: 5px;
 } 
 
 footer ul{
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 footer ul li a{
@@ -355,6 +365,18 @@ footer ul li a{
     font-family: 'Chakra Petch', sans-serif;
     color:rgb(139, 212, 80);    
 }
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.redes a{
+    width: 40px;
+    display: block;
+}
+
 
 .bi{
     color:rgb(139, 212, 80);
@@ -379,9 +401,6 @@ footer a img:hover{
 @media screen and (max-width:1130px){
     header{
         flex-direction: column;
-    }
-    header nav ul li a{
-        font-size: 20px;
     }
     header a img{
         width: 50px;
@@ -408,6 +427,9 @@ footer a img:hover{
     footer ul li a{
         font-size: 15px;        
     }
+    body{
+        background-color:rgb(115, 79, 154);
+    }
 }
 
 @media screen and (max-width:950px){
@@ -419,12 +441,19 @@ footer a img:hover{
         grid-column: span 1;
         grid-row: span 1;
     }
+    .grid-item h3{
+        font-size:20px ;
+    }
     .img15{
         grid-column: span 2;
     }
-}
-
-@media screen and (max-width:855px){
+    .navbar-dark .navbar-nav .nav-link{
+        font-family: 'Chakra Petch', sans-serif;
+        color:rgb(139, 212, 80);
+        font-size: 20px;
+        font-weight: 400;
+        transition: 0.3s ease all; 
+    }
     .imgTeclado{
         width: 150px;        
     }
@@ -437,11 +466,18 @@ footer a img:hover{
 }
 
 @media screen and (max-width:700px){
-    header nav ul li a{
-        font-size: 15px;
+    .navbar-dark .navbar-nav .nav-link{
+        font-family: 'Chakra Petch', sans-serif;
+        color:rgb(139, 212, 80);
+        font-size: 18px;
+        font-weight: 400;
+        transition: 0.3s ease all; 
     }
     .hero h1{
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .hero h2{
+        font-size: 15px;
     }
     .productos{
         flex-direction: column;
@@ -449,7 +485,73 @@ footer a img:hover{
     }
     .productos div h2{
         margin: 5px;
-    }    
+        font-size: 18px;
+    }  
+    .productos div p{
+        font-size: 15px;
+    }
+    .grid-item h3{
+        font-size:18px ;
+    }
+}
+
+@media screen and (max-width:650px){
+    .navbar-dark .navbar-nav .nav-link{
+        font-family: 'Chakra Petch', sans-serif;
+        color:rgb(139, 212, 80);
+        font-size: 15px;
+        font-weight: 400;
+        transition: 0.3s ease all; 
+    }
+    .hero h1{
+        font-size: 15px;
+    }
+
+    .hero h2{
+        font-size: 12px;
+    }
+    .productos div h2{
+        margin: 5px;
+        font-size: 15px;
+    }  
+    .productos div p{
+        font-size: 12px;
+    }
+    .grid-item h3{
+        font-size:15px ;
+    }
+    footer ul li a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:575px){
+    .navbar-dark .navbar-nav .nav-link{
+        font-family: 'Chakra Petch', sans-serif;
+        color:rgb(139, 212, 80);
+        font-size: 15px;
+        font-weight: 400;
+        transition: 0.3s ease all; 
+    }
+    .nav-link{
+        padding: 0px;
+        text-align: center;
+    }
+
+    .footer a img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .redes a{
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+    }
+
+    .bi{
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width:565px){
@@ -504,6 +606,13 @@ footer a img:hover{
     }
 }
 @media screen and (max-width:430px){
+    .navbar-dark .navbar-nav .nav-link{
+        font-family: 'Chakra Petch', sans-serif;
+        color:rgb(139, 212, 80);
+        font-size: 12px;
+        font-weight: 400;
+        transition: 0.3s ease all; 
+    }
     .hero h1{
         font-size: 12px;
         text-align: center;
@@ -516,5 +625,14 @@ footer a img:hover{
     }    
     .productos div p{
         font-size: 8px;
+    }
+    .redes a{
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+    }
+
+    .bi{
+        font-size: 1rem;
     }
 }
