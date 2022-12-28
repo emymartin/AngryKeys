@@ -39,6 +39,11 @@ header{
 
 .hlogo{
     animation: ease-in animation 0.5s;
+    transition: 1s ease-out;
+}
+
+.hlogo:hover{
+    transform: scale(1.1);
 }
 
 @keyframes animation{
@@ -70,6 +75,8 @@ header{
     font-size: 40px;
     color:rgb(247, 187, 42);
 }
+
+
 
 .hero h2{
     font-family: 'Chakra Petch', sans-serif;
@@ -111,12 +118,24 @@ header{
     margin: 20px;
 }
 
+.imgTeclado{
+    transition: 1s ease-out;
+}
+
 .imgTeclado:hover{
     transform: scale(1.20);
 }
 
+.imgKeycaps{
+    transition: 1s ease-out;
+}
+
 .imgKeycaps:hover{
     transform: scale(1.20);
+}
+
+.imgSwitch{
+    transition: 1s ease-out;
 }
 
 .imgSwitch:hover{
@@ -272,7 +291,6 @@ header{
     width: 500px;
     height: 350px;
     text-align:center;
-
 }
 
 .imgIzq div h2{
@@ -295,6 +313,11 @@ header{
 
 .imgIzq a{
     padding-bottom: 80px;
+    transition: 0.5s ease-in;
+}
+
+.imgIzq a:hover{
+    transform: scale(1.05);
 }
 
 .imgDer{
@@ -331,6 +354,11 @@ header{
 
 .imgDer a{
     padding-bottom: 20px;
+    transition: 0.5s ease-in;
+}
+
+.imgDer a:hover{
+    transform: scale(1.05);
 }
 
 /*--------------------------contacto.html---------------------------*/
@@ -383,18 +411,23 @@ footer ul li a{
     font-size: 2rem;  
 }
 
-footer ul li a:hover{
-    color:rgb(247, 187, 42);
-}
-
 .bi:hover{
     color:rgb(247, 187, 42);
     font-size: 2.2rem;
 }
 
+footer ul li a:hover{
+    color:rgb(247, 187, 42);
+}
+
+footer a img{
+    transition:1s ease-out;
+}
+
 footer a img:hover{
     transform: scale(1.1);
 }
+
 
 /*-------------------MEDIA QUERY-------------------*/
 
