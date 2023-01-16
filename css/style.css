@@ -60,7 +60,7 @@ header{
 /*--------------------------index.html---------------------------*/
 
 .hero{
-    background-color:rgb(29, 26, 47);
+    background-color:#1d1a2f;
     width: 100%;
     justify-content:baseline;
     align-items: center;
@@ -398,7 +398,7 @@ header{
     padding-top: 10px;
 }
 .form-check-input{
-    background-color:rgb(115, 79, 154);
+    background-color:#734f9a;
 }
 .form-check-label{
     color:rgb(139, 212, 80);
