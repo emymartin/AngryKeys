@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+::selection{
+    color:rgb(243, 223, 176);
+    background-color: rgb(44, 37, 82);
+}
+
 
 /*----------HEADER----------*/
 
@@ -288,6 +293,7 @@ header{
 .imgIzq div{    
     height: 350px;
     text-align:center;
+    padding: 15px;
 }
 
 .imgIzq div h2{
@@ -337,6 +343,7 @@ header{
 .imgDer div{    
     height: 350px;
     text-align: center;
+    padding: 15px;
 }
 
 .imgDer div h2{
@@ -660,7 +667,7 @@ footer a img:hover{
         padding-top: 20px;
     }
     .imgIzq a{
-        padding: 5px;
+        padding-top: 50px;
         padding-bottom: 20px;
     }
     .imgDer{
@@ -670,9 +677,13 @@ footer a img:hover{
     }
     .imgDer div{
         height:150px;
-    }
+    }    
     .imgDer div h2{
         padding-top: 20px;
+    }
+    .imgDer a{
+        padding-top: 50px;
+        padding-bottom: 20px;
     }
     .mb-3{
         font-size: 18px;
@@ -729,18 +740,15 @@ footer a img:hover{
         padding: 0px;
         text-align: center;
     }
-
     .footer a img{
         width: 30px;
         height: 30px;
     }
-
     .redes a{
         width: 25px;
         height: 25px;
         margin: 5px;
     }
-
     .bi{
         font-size: 1.5rem;
     }
@@ -768,8 +776,7 @@ footer a img:hover{
     }
     .productos div h2{
         font-size: 12px;    
-    }
-    
+    }    
     .productos div p{
         font-size: 10px;
     }
@@ -843,7 +850,6 @@ footer a img:hover{
         height: 15px;
         margin: 5px;
     }
-
     .bi{
         font-size: 1rem;
     }
