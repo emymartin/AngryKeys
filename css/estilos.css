@@ -189,157 +189,71 @@ header {
     grid-column: span 2; }
 
 /*--------------------------keycaps.html---------------------------*/
-.contendor {
+.contKey {
   font-family: 'Chakra Petch', sans-serif; }
-  .contendor .imgIzq {
+  .contKey .imgIzq {
     background-color: #1d1a2f;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
     flex-direction: row-reverse; }
-    .contendor .imgIzq div {
+    .contKey .imgIzq div {
       height: 350px;
       text-align: center;
       padding: 15px; }
-      .contendor .imgIzq div h2 {
+      .contKey .imgIzq div h2 {
         text-align: center;
         font-family: 'Chakra Petch', sans-serif;
         color: #f7bb2a;
         padding-top: 50px; }
-      .contendor .imgIzq div h3 {
+      .contKey .imgIzq div h3 {
         color: #8bd450;
         font-size: 20px; }
-      .contendor .imgIzq div p {
+      .contKey .imgIzq div p {
         color: #8bd450;
         font-size: 20px;
         margin: 0px; }
-    .contendor .imgIzq a {
+    .contKey .imgIzq a {
       padding-bottom: 80px;
       transition: 0.5s ease-in; }
-      .contendor .imgIzq a:hover {
+      .contKey .imgIzq a:hover {
         transform: scale(1.05); }
-  .contendor .imgDer {
+  .contKey .imgDer {
     background-color: #1d1a2f;
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
-    .contendor .imgDer div {
+    .contKey .imgDer div {
       height: 350px;
       text-align: center;
       padding: 15px; }
-      .contendor .imgDer div h2 {
+      .contKey .imgDer div h2 {
         text-align: center;
         font-family: 'Chakra Petch', sans-serif;
         color: #f7bb2a;
         padding-top: 50px; }
-      .contendor .imgDer div h3 {
+      .contKey .imgDer div h3 {
         color: #8bd450;
         font-size: 20px; }
-      .contendor .imgDer div p {
+      .contKey .imgDer div p {
         color: #8bd450;
         font-size: 20px;
         font-family: 'Chakra Petch', sans-serif;
         margin: 0px; }
-    .contendor .imgDer a {
+    .contKey .imgDer a {
       padding-bottom: 20px;
       transition: 0.5s ease-in; }
-      .contendor .imgDer a:hover {
+      .contKey .imgDer a:hover {
         transform: scale(1.05); }
 
-/*---.teclado y .switch donde los pongo?????, dentro de .contenedor???---*/
-/*-----si descomento lo de abajo anda, si lo borro no aplica nada de lo de arriba*/
-/*
-.imgIz background-color:rgb(29, 26, 47);
-    display: flex;
-    justify-content:space-evenly;
-    align-items:flex-end;
-    flex-direction: row-reverse;
-}
+.teclado {
+  width: 500px;
+  height: 195px; }
 
-.imgIzq div{    
-    height: 350px;
-    text-align:center;
-    padding: 15px;
-}
+.switch {
+  width: 250px;
+  height: 232px; }
 
-.imgIzq div h2{
-    text-align: center;
-    font-family: 'Chakra Petch', sans-serif;
-    color:rgb(247, 187, 42);
-    padding-top: 50px;
-}
-
-.imgIzq div h3{
-    color:rgb(139, 212, 80);
-    font-size: 20px;
-}
-
-.imgIzq div p{
-    color:rgb(139, 212, 80);
-    font-size: 20px;
-    margin: 0px;
-}
-
-.imgIzq a{
-    padding-bottom: 80px;
-    transition: 0.5s ease-in;
-}
-
-.imgIzq a:hover{
-    transform: scale(1.05);
-}
-
-.teclado{
-    width: 500px;
-    height: 195px;
-}
-
-.switch{
-    width: 250px;
-    height: 232px;
-}
-
-.imgDer{
-    background-color:rgb(29, 26, 47);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.imgDer div{    
-    height: 350px;
-    text-align: center;
-    padding: 15px;
-}
-
-.imgDer div h2{
-    text-align: center;
-    font-family: 'Chakra Petch', sans-serif;
-    color:rgb(247, 187, 42);
-    padding-top: 50px;
-}
-
-.imgDer div h3{
-    color:rgb(139, 212, 80);
-    font-size: 20px;
-}
-
-.imgDer div p{
-    color:rgb(139, 212, 80);
-    font-size: 20px;
-    font-family: 'Chakra Petch', sans-serif;
-    margin: 0px;
-}
-
-.imgDer a{
-    padding-bottom: 20px;
-    transition: 0.5s ease-in;
-}
-
-.imgDer a:hover{
-    transform: scale(1.05);
-}
-*/
 /*--------------------------contacto.html---------------------------*/
 .contenedor {
   display: flex;
@@ -349,7 +263,7 @@ header {
   background-color: #1d1a2f;
   margin: 0px;
   padding-bottom: 20px; }
-  .contenedor mb-3 {
+  .contenedor .mb-3 {
     font-family: 'Chakra Petch', sans-serif;
     background-color: #1d1a2f;
     text-align: center;
@@ -358,17 +272,17 @@ header {
     padding: 0px;
     border: none;
     margin: 0px; }
-    .contenedor mb-3 .form-label-name {
-      padding-top: 10px; }
-    .contenedor mb-3 .form-text {
-      color: #8bd450; }
-    .contenedor mb-3 .form-label {
-      margin: 0px; }
-    .contenedor mb-3 .form-check-input {
-      background-color: #734f9a; }
-    .contenedor mb-3 .form-check-label {
-      color: #8bd450;
-      padding-bottom: 5px; }
+  .contenedor .form-label-name {
+    padding-top: 10px; }
+  .contenedor .form-text {
+    color: #8bd450; }
+  .contenedor .form-label {
+    margin: 0px; }
+  .contenedor .form-check-input {
+    background-color: #734f9a; }
+  .contenedor .form-check-label {
+    color: #8bd450;
+    padding-bottom: 5px; }
   .contenedor .gmap {
     font-family: 'Chakra Petch', sans-serif;
     background-color: #1d1a2f;
@@ -443,15 +357,15 @@ footer {
     transition: 1s ease-out; }
     footer a img:hover {
       transform: scale(1.1); }
-  footer a ul {
+  footer ul {
     list-style: none;
     margin: 0px;
     padding: 0px; }
-  footer a li a {
+  footer li a {
     text-decoration: none;
     font-family: 'Chakra Petch', sans-serif;
     color: #8bd450; }
-    footer a li a:hover {
+    footer li a:hover {
       color: #f7bb2a; }
   footer .redes {
     display: flex;
@@ -460,10 +374,10 @@ footer {
     footer .redes a {
       width: 40px;
       display: block; }
-      footer .redes a bi {
+      footer .redes a .bi {
         color: #8bd450;
         font-size: 2rem; }
-        footer .redes a bi:hover {
+        footer .redes a .bi:hover {
           color: #f7bb2a;
           font-size: 2.2rem; }
 
