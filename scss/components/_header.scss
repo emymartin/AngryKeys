@@ -1,0 +1,48 @@
+/*-HEADER-*/
+
+header{
+    background-color:$color-fondo-secundario;
+    align-items: center;
+    padding: 10px;
+    .navbar{
+        width: 100%;
+            hlogo{
+                animation: ease-in animation 0.5s;
+                transition: 1s ease-out;
+                &:hover{
+                    transform: scale(1.1);
+                    }
+                }
+        .navbar-collapse{
+            flex-grow: initial;
+        }    
+    }
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-family: 'Chakra Petch', sans-serif;
+    color:$color-principal-font;
+    font-size: 25px;
+    font-weight: 400;
+    transition: 0.3s ease all; 
+    &:hover{
+        color:$color-secundario-font;
+        transform: scale(1.05);
+    }
+}
+
+.hlogo{
+    animation: ease-in animation 0.5s;
+    transition: 1s ease-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes animation{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

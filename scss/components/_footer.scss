@@ -1,0 +1,49 @@
+
+footer{    
+    background-color:$color-fondo-secundario;
+    color:$color-principal-font; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    padding: 5px;
+    a{
+        img{
+            transition:1s ease-out;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+        li{           
+            a{
+                text-decoration: none;
+                font-family: 'Chakra Petch', sans-serif;
+                color:$color-principal-font; 
+                &:hover{
+                    color:$color-secundario-font;
+                    }
+            }
+        }
+    }
+    .redes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            width: 40px;
+            display: block;
+            bi{
+                color:$color-principal-font;
+                font-size: 2rem;  
+                &:hover{
+                    color:$color-secundario-font;
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+} 

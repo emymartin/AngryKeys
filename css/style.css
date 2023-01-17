@@ -88,11 +88,6 @@ header{
     margin-bottom: 10px;
 }
 
-.hero p{
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 20px;
-}
-
 .productos{
     background-color:rgb(29, 26, 47);
     display: flex;
@@ -405,7 +400,7 @@ header{
     padding-top: 10px;
 }
 .form-check-input{
-    background-color:#734f9a;
+    background-color:rgb(115, 79, 154);
 }
 .form-check-label{
     color:rgb(139, 212, 80);
