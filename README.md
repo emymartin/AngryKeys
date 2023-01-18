@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [AngryKeys](https://github.com/emymartin/AngryKeys.git)
 
-- 🌱 I’m currently learning **HTML5 & CSS3, Bootstrap**
+- 🌱 I’m currently learning **HTML5, CSS3, Bootstrap and Node JS**
 
 - 💬 Ask me about **Videogames**
 

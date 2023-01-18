@@ -1,15 +1,15 @@
+/*-FOOTER-*/
+
 footer {
     background-color: $color-fondo-secundario;
     color: $color-principal-font;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 5px;
+    margin-top: auto;
+    @include ajusteFlex (flex, space-around , center );
 
     a {
         img {
             transition: 1s ease-out;
-
             &:hover {
                 transform: scale(1.1);
             }
@@ -25,7 +25,6 @@ footer {
     li {
         a {
             text-decoration: none;
-            font-family: 'Chakra Petch', sans-serif;
             color: $color-principal-font;
 
             &:hover {
@@ -36,9 +35,7 @@ footer {
     }
 
     .redes {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include ajusteFlex (flex, space-around , center );
 
         a {
             width: 40px;

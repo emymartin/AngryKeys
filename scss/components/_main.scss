@@ -1,8 +1,5 @@
-/*------INDEX------*/
-/*HERO*/
 
 /*----------MAIN----------*/
-
 /*--------------------------index.html---------------------------*/
 .hero {
     background-color: $color-fondo-principal;
@@ -10,19 +7,16 @@
     justify-content: baseline;
     align-items: center;
     flex-direction: column;
-    font-size: 30px;
     text-align: center;
     padding-top: 10px;
 
-    h1 {
-        font-family: 'Chakra Petch', sans-serif;
-        font-size: 40px;
+    h1 {        
+        font-size: nth($font-size , 9);
         color: $color-secundario-font;
     }
 
     h2 {
-        font-family: 'Chakra Petch', sans-serif;
-        font-size: 30px;
+        font-size: nth($font-size , 8);
         color: $color-principal-font;
         margin-bottom: 10px;
     }
@@ -30,9 +24,7 @@
 
 .productos {
     background-color: $color-fondo-principal;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include ajusteFlex (flex, space-evenly , center );
     padding-bottom: 20px;
     padding-top: 20px;
 
@@ -41,15 +33,13 @@
         text-align: center;
 
         h2 {
-            font-family: 'Chakra Petch', sans-serif;
-            font-size: 30px;
+            font-size: nth($font-size , 8);
             color: $color-secundario-font;
             margin: 20px;
         }
 
         p {
-            font-family: 'Chakra Petch', sans-serif;
-            font-size: 20px;
+            font-size: nth($font-size , 6);
             color: $color-principal-font;
             margin: 20px;
         }
@@ -81,37 +71,35 @@
 }
 
 
+/*----------MAIN----------*/
 /*--------------------------parte.html---------------------------*/
 
 .contenedorDespiece {
-    font-family: 'Chakra Petch', sans-serif;
-
+    
     h1 {
         color: $color-secundario-font;
         background-color: $color-fondo-principal;
-        font-size: 40px;
+        font-size: nth($font-size , 9);
         text-align: center;
         padding-top: 20px;
         margin: 0px;
     }
 
     h2 {
-        color: rgb(247, 187, 42);
-        font-size: 30px;
+        color: $color-secundario-font;
+        font-size: nth($font-size , 8);
         text-align: center;
     }
 
     p {
-        color: rgb(139, 212, 80);
-        font-size: 20px;
+        color: $color-principal-font;
+        font-size: nth($font-size , 6);
         padding-top: 20px;
     }
 
     .boxPartes {
         background-color: $color-fondo-principal;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @include ajusteFlex (flex, space-evenly , center );
 
         div {
             width: 500px;
@@ -122,10 +110,8 @@
     }
 
     .boxPartes2 {
-        background-color: rgb(29, 26, 47);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        background-color: $color-fondo-principal;
+        @include ajusteFlex (flex, space-evenly , center );
         flex-direction: row-reverse;
 
         div {
@@ -137,10 +123,8 @@
     }
 
     .boxPartes3 {
-        background-color: rgb(29, 26, 47);
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
+        background-color: $color-fondo-principal;
+        @include ajusteFlex (flex, space-around , flex-start );
         padding: 20px;
         padding-top: 30px;
 
@@ -152,11 +136,12 @@
 }
 
 
+/*----------MAIN----------*/
 /*--------------------------teclados.html---------------------------*/
 
 .grid-galeria {
     width: 100%;
-    background-color: rgb(29, 26, 47);
+    background-color: $color-fondo-principal;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
@@ -166,8 +151,7 @@
         position: relative;
 
         img {
-            width: 100%;
-            height: 100%;
+            @include anchoyalto (100% , 100% );
             object-fit: cover;
             transition: 0.3s ease all;
 
@@ -180,7 +164,7 @@
             position: absolute;
             bottom: 0px;
             color: white;
-            background-color: rgba(0, 0, 0, 0.507);
+            background-color:$color-fondo-principal;
             width: 100%;
             text-align: center;
         }
@@ -212,16 +196,13 @@
 }
 
 
+/*----------MAIN----------*/
 /*--------------------------keycaps.html---------------------------*/
 
 .contKey {
-    font-family: 'Chakra Petch', sans-serif;
-
     .imgIzq {
-        background-color: rgb(29, 26, 47);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-end;
+        background-color:$color-fondo-principal;
+        @include ajusteFlex (flex, space-evenly , flex-end );
         flex-direction: row-reverse;
 
         div {
@@ -231,38 +212,35 @@
 
             h2 {
                 text-align: center;
-                font-family: 'Chakra Petch', sans-serif;
-                color: rgb(247, 187, 42);
+                color: $color-secundario-font;
                 padding-top: 50px;
             }
 
             h3 {
-                color: rgb(139, 212, 80);
-                font-size: 20px;
+                color: $color-principal-font;
+                font-size: nth($font-size , 6);
             }
 
             p {
-                color: rgb(139, 212, 80);
-                font-size: 20px;
+                color: $color-principal-font;
+                font-size: nth($font-size , 6);
                 margin: 0px;
             }
         }
 
-        a {
-            padding-bottom: 80px;
-            transition: 0.5s ease-in;
+    a {
+        padding-bottom: 80px;
+        transition: 0.5s ease-in;
 
-            &:hover {
-                transform: scale(1.05);
-            }
+        &:hover {
+            transform: scale(1.05);
         }
     }
+}
 
     .imgDer {
-        background-color: rgb(29, 26, 47);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        background-color: $color-fondo-principal;
+        @include ajusteFlex (flex, space-evenly , center );
 
         div {
             height: 350px;
@@ -271,62 +249,56 @@
 
             h2 {
                 text-align: center;
-                font-family: 'Chakra Petch', sans-serif;
-                color: rgb(247, 187, 42);
+                color: $color-secundario-font;
                 padding-top: 50px;
             }
 
             h3 {
-                color: rgb(139, 212, 80);
-                font-size: 20px;
+                color: $color-principal-font;
+                font-size: nth($font-size , 6);
             }
 
             p {
-                color: rgb(139, 212, 80);
-                font-size: 20px;
-                font-family: 'Chakra Petch', sans-serif;
+                color: $color-principal-font;
+                font-size: nth($font-size , 6);
                 margin: 0px;
             }
         }
 
-        a {
-            padding-bottom: 20px;
-            transition: 0.5s ease-in;
+    a {
+        padding-bottom: 20px;
+        transition: 0.5s ease-in;
 
-            &:hover {
-                transform: scale(1.05);
-            }
+        &:hover {
+            transform: scale(1.05);
         }
     }
 }
+}
 
 .teclado {
-    width: 500px;
-    height: 195px;
+    @include anchoyalto (500px , 195px );
 }
 
 .switch {
-    width: 250px;
-    height: 232px;
+    @include anchoyalto (250px , 232px );
 }
 
+/*----------MAIN----------*/
 /*--------------------------contacto.html---------------------------*/
 
 .contenedor {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(29, 26, 47);
+    @include ajusteFlex (flex, center , center );
+    flex-direction: column;    
+    background-color: $color-fondo-principal;
     margin: 0px;
     padding-bottom: 20px;
 
     .mb-3 {
-        font-family: 'Chakra Petch', sans-serif;
-        background-color: rgb(29, 26, 47);
+        background-color: $color-fondo-principal;
         text-align: center;
-        font-size: 20px;
-        color: rgb(139, 212, 80);
+        font-size: nth($font-size , 6);
+        color: $color-principal-font;
         padding: 0px;
         border: none;
         margin: 0px;
@@ -337,7 +309,7 @@
     }
 
     .form-text {
-        color: rgb(139, 212, 80);
+        color: $color-principal-font;
     }
 
     .form-label {
@@ -345,81 +317,27 @@
     }
 
     .form-check-input {
-        background-color: rgb(115, 79, 154);
+        background-color: $color-fondo-secundario;
     }
 
     .form-check-label {
-        color: rgb(139, 212, 80);
+        color:$color-principal-font;
         padding-bottom: 5px;
     }
 
     .gmap {
-        font-family: 'Chakra Petch', sans-serif;
-        background-color: rgb(29, 26, 47);
+        background-color:$color-fondo-principal;
         text-align: center;
-        color: rgb(139, 212, 80);
+        color: $color-principal-font;
 
         h2 {
-            font-size: 20px;
+            font-size: nth($font-size , 6);
             padding-top: 20px;
         }
 
         iframe {
-            width: 640px;
-            height: 480px;
+            @include anchoyalto (640px , 480px );
         }
     }
 }
 
-
-/*
-.contenedor{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;    
-    background-color:rgb(29, 26, 47);
-    margin: 0px;
-    padding-bottom: 20px;   
-}
-.mb-3{
-    font-family: 'Chakra Petch', sans-serif;
-    background-color:rgb(29, 26, 47);
-    text-align: center;
-    font-size: 20px;
-    color:rgb(139, 212, 80);
-    padding: 0px;
-    border: none;
-    margin: 0px;
-}
-.form-text{
-    color:rgb(139, 212, 80);    
-}
-.form-label{
-    margin: 0px;
-}
-.form-label-name{
-    padding-top: 10px;
-}
-.form-check-input{
-    background-color:rgb(115, 79, 154);
-}
-.form-check-label{
-    color:rgb(139, 212, 80);
-    padding-bottom: 5px;
-}
-.gmap{
-    font-family: 'Chakra Petch', sans-serif;
-    background-color:rgb(29, 26, 47);
-    text-align: center;
-    color:rgb(139, 212, 80);
-}
-.gmap h2{
-    font-size: 20px;
-    padding-top: 20px;
-}
-.gmap iframe{
-    width: 640px;
-    height: 480px;
-}
-*/

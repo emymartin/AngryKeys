@@ -11,7 +11,6 @@
     background-color: rgb(44, 37, 82);
 }
 
-
 /*----------HEADER----------*/
 
 
@@ -51,14 +50,6 @@ header{
     transform: scale(1.1);
 }
 
-@keyframes animation{
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
 
 /*----------MAIN----------*/
 
