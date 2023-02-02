@@ -89,57 +89,54 @@ header {
 
 /*----------MAIN----------*/
 /*--------------------------parte.html---------------------------*/
-.contenedorDespiece h1 {
-  color: #f7bb2a;
-  background-color: #1d1a2f;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 20px;
-  margin: 0px; }
-
-.contenedorDespiece h2 {
-  color: #f7bb2a;
-  font-size: 30px;
-  text-align: center; }
-
-.contenedorDespiece p {
-  color: #8bd450;
-  font-size: 20px;
-  padding-top: 20px; }
-
-.contenedorDespiece .boxPartes {
-  background-color: #1d1a2f;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-  .contenedorDespiece .boxPartes div {
-    width: 500px;
+.contenedorDespiece {
+  width: 100%; }
+  .contenedorDespiece h1 {
+    color: #f7bb2a;
+    background-color: #1d1a2f;
+    font-size: 40px;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px; }
-
-.contenedorDespiece .boxPartes2 {
-  background-color: #1d1a2f;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row-reverse; }
-  .contenedorDespiece .boxPartes2 div {
-    width: 500px;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px; }
-
-.contenedorDespiece .boxPartes3 {
-  background-color: #1d1a2f;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 20px;
-  padding-top: 30px; }
-  .contenedorDespiece .boxPartes3 div {
-    width: 500px;
+    padding-top: 20px;
+    margin: 0px; }
+  .contenedorDespiece h2 {
+    color: #f7bb2a;
+    font-size: 30px;
     text-align: center; }
+  .contenedorDespiece p {
+    color: #8bd450;
+    font-size: 20px;
+    padding-top: 20px; }
+  .contenedorDespiece .boxPartes {
+    background-color: #1d1a2f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .contenedorDespiece .boxPartes div {
+      width: 500px;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+  .contenedorDespiece .boxPartes2 {
+    background-color: #1d1a2f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse; }
+    .contenedorDespiece .boxPartes2 div {
+      width: 500px;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+  .contenedorDespiece .boxPartes3 {
+    background-color: #1d1a2f;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    padding-top: 30px; }
+    .contenedorDespiece .boxPartes3 div {
+      width: 500px;
+      text-align: center; }
 
 /*----------MAIN----------*/
 /*--------------------------teclados.html---------------------------*/
@@ -341,7 +338,8 @@ footer {
   .contenedorDespiece .boxPartes {
     flex-direction: column; }
   .contenedorDespiece .boxPartes div {
-    padding: 15px; }
+    padding: 15px;
+    width: 100%; }
   .contenedorDespiece .boxPartes div h2 {
     font-size: 20px; }
   .contenedorDespiece .boxPartes div p {
@@ -349,7 +347,8 @@ footer {
   .contenedorDespiece .boxPartes2 {
     flex-direction: column; }
   .contenedorDespiece .boxPartes2 div {
-    padding: 15px; }
+    padding: 15px;
+    width: 100%; }
   .contenedorDespiece .boxPartes2 div h2 {
     font-size: 20px; }
   .contenedorDespiece .boxPartes2 div p {
@@ -357,6 +356,8 @@ footer {
   .contenedorDespiece .boxPartes3 {
     flex-direction: column;
     align-items: center; }
+  .contenedorDespiece .boxPartes3 div {
+    width: 100%; }
   .contenedorDespiece .boxPartes3 div h2 {
     font-size: 20px; }
   .contenedorDespiece .boxPartes3 div p {
@@ -541,7 +542,7 @@ footer {
       grid-column: span 1;
       grid-row: span 1; }
   .contenedorDespiece {
-    width: max-content; }
+    width: 100%; }
   .case {
     width: 320px; }
   .ytvideo {
